@@ -1,3 +1,10 @@
-<p>
-  picture works!
-</p>
+<div class="card">
+
+  <img [src]="picture.thumbnailUrl" alt="" class="card-img-top">
+
+  <div class="card-body">
+    <h5 class="card-title">{{ picture.title }}</h5>
+    <a [href]="picture.url" class="btn btn-primary" target="_blank">View image</a>
+  </div>
+
+</div>

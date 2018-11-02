@@ -9,10 +9,12 @@
       <app-search-bar></app-search-bar>
 
       <ng-container *ngIf="pictures$ | async as pictures; else loading">
-        <app-picture
-          *ngFor="let picture of pictures"
-          [picture]="picture"
-        ></app-picture>
+        <div class="pictures">
+          <app-picture
+            *ngFor="let picture of pictures"
+            [picture]="picture"
+          ></app-picture>
+        </div>
       </ng-container>
 
       <ng-template #loading>
