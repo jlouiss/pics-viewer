@@ -1,3 +1,5 @@
-<p>
-  search-bar works!
-</p>
+<input type="text"
+       class="form-control d-inline"
+       placeholder="Filter by title"
+       (keyup)="this.changes$.next($event.target.value)"
+>

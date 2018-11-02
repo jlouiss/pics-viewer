@@ -6,7 +6,9 @@
   <div class="row">
     <div class="col-12">
 
-      <app-search-bar></app-search-bar>
+      <app-search-bar
+        (search)="onSearch($event)"
+      ></app-search-bar>
 
       <ng-container *ngIf="pictures$ | async as pictures; else loading">
         <div class="pictures">
